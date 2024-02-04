@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Source Sans 3", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+/*-----------------------------header Logo dtails -------------------------------*/
+.logo-details {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 12px;
+}
+p {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.logo-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 5rem;
+  margin-right: 5%;
+  object-fit: contain;
+}
+/* ------------------------navbar -----------------------------------*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /* align-items: center; */
+}
+nav li {
+  list-style: none;
+  padding: 1rem;
+  border: solid 1px transparent;
+  /* border-radius: 100%; */
+  text-align: center;
+  transition: 0.5s;
+}
+nav li:hover {
+  scale: -1 1.2;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ---------------------main body 1st section-----------------------*/
+.bg-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+}
+.text-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-container p {
+  font-weight: 300;
+}
+.content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-size: 35px;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+/* -------------------------------side social menu------------------------------*/
+.side-menu {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
+}
+.side-logo {
+  padding: 0.2rem;
+  transition: 0.3s;
+  /* display: inline-block; */
+}
+.side-logo:hover {
+  scale: 1.2;
+}
+/* --------------------------------about  me------------------------------*/
+.about-head {
+  width: 100%;
+  text-align: center;
+  padding: 5% 25%;
+}
+.about h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  padding-bottom: 2%;
+}
+.about p {
+  padding-top: 5%;
+}
+/* ------------------------------profile --------------------------*/
+.profile {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  padding-right: 6%;
+  box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 10px 0;
+}
+.profile-details {
+  height: fit-content;
+  font-size: 30%;
+  width: 50%;
+  padding: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.profile-img img {
+  object-fit: cover;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+}
+
+/* --------------------------SKILLS-------------------------------------- */
+.skills {
+  width: 100%;
+  text-align: center;
+}
+.skill-head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 5% 40%;
+}
+.skill-list {
+  box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 10px 0;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 100%;
+  padding: 0px 10%;
+}
+.skill {
+  box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 29px 0;
+  background-color: rgb(228, 228, 228);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10%;
+  color: rgb(146, 146, 146);
+  /* font-size: 15px; */
+  font-weight: 800;
+}
+
+/*--------------------------- projects -------------------------*/
+.projects {
+  height: fit-content;
+  width: 100%;
+  font-size: 35px;
+  margin-bottom: 10%;
+}
+.project-list {
+  display: flex;
+  gap: 2%;
+  padding: 5%;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  /* max-height: auto; */
+  /* margin-bottom: 100px; */
+}
+.proj-head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 5% 30%;
+}
+article {
+  box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 29px 0;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding: 7vh;
+  transition: 0.3s ease-in-out;
+}
+
+article:hover img {
+  scale: 1.2;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-wrap {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.proj-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-bottom: 5vh;
+  object-fit: cover;
+  transition: 0.5s;
+  overflow: hidden;
+}
+/* ---------------------------contact-form------------------------------ */
+.contact {
+  position: relative;
+  height: 150vh;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.contact-head {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+  /* transform: translateX(50%); */
+}
+.contact h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  padding-bottom: 2%;
+}
+.contact-head p {
+  padding-top: 5%;
+}
+.contact-form {
+  position: absolute;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fields {
+  /* transform: translateX(-2%); */
+  /* align-items: center; */
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.form-field {
+  padding: 2%;
+}
+form .form-input {
+  width: 80vh;
+  background: rgb(228, 226, 226);
+  margin-bottom: 5%;
+  border: 2px solid rgb(228, 226, 226);
+  border-radius: 5px;
+  padding: 2%;
+}
+.form-field button {
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid rgb(228, 226, 226);
+  border-radius: 7%;
+  color: rgb(146, 146, 146);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 10px 7px 35px 0;
+}
+/* ------------------------------footer ----------------------------------------- */
+footer {
+  width: 100%;
+  height: 60vh !important;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+footer .personal {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5%;
+}
+footer .sec1 {
+  width: 40%;
+}
+footer .sec2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .f-logo-list {
+  display: flex;
+  justify-items: space-between;
+  gap: 10%;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
