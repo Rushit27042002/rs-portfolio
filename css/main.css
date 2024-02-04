@@ -160,13 +160,13 @@ nav li a {
 }
 .skill-list {
   box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 10px 0;
-  height: 20vh;
+  /* height: 20vh; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   font-size: 100%;
-  padding: 0px 10%;
+  padding: 4% 10%;
 }
 .skill {
   box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 29px 0;
