@@ -62,3 +62,11 @@
 //     return re.test(email);
 // }
 // practice
+function navOpen(){
+    document.getElementById("nav-colapse").style.width="50%"
+    document.getElementById("nav-colapse").style.display="block"
+    document.getElementById("nav-colapse").style.height="100%"
+}
+function navClose(){ 
+    document.getElementById("nav-colapse").style.display="none"
+}
