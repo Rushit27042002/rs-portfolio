@@ -500,7 +500,6 @@ iframe {
 }
 .layer a {
   color: #000000;
-  text-decoration: none;
 }
 .layer p {
   font-weight: 300;
@@ -536,4 +535,8 @@ iframe {
     height: 50vh;
     margin-bottom: 40%;
   }
+}
+
+a {
+  text-decoration: none;
 }
