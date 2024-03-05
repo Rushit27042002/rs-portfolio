@@ -70,17 +70,3 @@ function navOpen(){
 function navClose(){ 
     document.getElementById("nav-colapse").style.display="none"
 }
-
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "rushitsuthar70917@gmail.com",
-        Password : "15602ECA62A33E609B22C86DCD115E53F1A1",
-        To : 'rushitsuthar27@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Msg on portfolio",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
