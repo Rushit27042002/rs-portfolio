@@ -63,10 +63,9 @@
 // }
 // practice
 function navOpen(){
-    document.getElementById("nav-colapse").style.width="50%"
-    document.getElementById("nav-colapse").style.display="block"
-    document.getElementById("nav-colapse").style.height="100%"
+    document.getElementById("nav-colapse").style.right="0"
 }
 function navClose(){ 
-    document.getElementById("nav-colapse").style.display="none"
+    document.getElementById("nav-colapse").style.right="-50%"
+
 }

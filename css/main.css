@@ -76,32 +76,33 @@ nav li a {
   display: none;
 }
 #nav-colapse {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 800;
-  display: none;
+  /* display: none; */
   height: 100%;
-  width: 0;
+  width: 40%;
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0;
-  background: linear-gradient(to right, #8d8d8da1 0%, #2d2d2d);
+  right: -50%;
+  background: rgb(235, 235, 235);
   overflow-x: hidden;
-  transition: 1.2s;
+  transition: 0.6s;
   /* padding-top: 60px; */
 }
 #nav-colapse a {
   display: block;
   text-decoration: none;
-  padding: 4%;
+  padding: 10%;
   margin-left: 10px;
   width: 100%;
-  color: #fff;
+  color: #000000;
   transition: 0.8s;
 }
 #nav-colapse button {
   /* background: linear-gradient(to right, #8d8d8da1 0%, #2d2d2d); */
-  background-color: #4f4f4f;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   color: #000000;
   padding: 4%;
   text-align: left;
@@ -109,6 +110,7 @@ nav li a {
   font-size: 30px;
   font-weight: 800;
   border: transparent;
+  margin-bottom: 30%;
 }
 /* ---------------------main body 1st section-----------------------*/
 .bg-img {
