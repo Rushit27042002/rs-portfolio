@@ -162,7 +162,7 @@
                 </div>
             </form>
             
-            <h2 id="responseMessage"></h2>
+            <h2 id="responseMessage" style="text-align: center;font-size: medium;"></h2>
         </div>
         <footer>
             <div class="personal">
@@ -200,7 +200,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     // Validate the form data
     if (!name || !email || !message) {
         responseMessage.innerText = "Please fill out all fields.";
-        responseMessage.style.color = "red";
+        responseMessage.style.color = "black";
         return;
     }
 
@@ -214,11 +214,10 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     try {
         // Make a POST request to the Sails.js API
-        const response = await fetch("https://nodemail-production.up.railway.app/send-email", {
+        const response = await fetch("http://localhost:1337/send-email", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-            mode: 'cors'
+            headers: { "Content-Type": "application/json"},
+            body: JSON.stringify(formData)
         });
 
         const data = await response.json(); // Parse the response as JSON
