@@ -154,7 +154,6 @@ nav li a {
 .cv-btn:hover,
 .skill:hover,
 .submit-btn:hover {
-  scale: 1.1;
   cursor: pointer;
   background-color: #eaeaea;
   color: black;
@@ -270,7 +269,7 @@ nav li a {
 /* ---------------------------contact-form------------------------------ */
 .contact {
   position: relative;
-  height: 70rem;
+  height: 50rem;
   width: 100%;
   /* display: flex;
   flex-direction: column;
@@ -280,17 +279,17 @@ nav li a {
 .contact-head {
   width: 100%;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   /* transform: translateX(50%); */
 }
 .contact h2 {
   /* font-size: 40px; */
   font-weight: 800;
   letter-spacing: 4px;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 .contact-head p {
-  padding-top: 5%;
+  padding-top: 1%;
 }
 .contact-form {
   position: absolute;
@@ -313,12 +312,12 @@ nav li a {
   flex-direction: column;
 }
 .form-field {
-  padding: 2%;
+  padding-bottom: 1%;
 }
 form .form-input {
-  width: 50rem;
+  width: 40rem;
   background: rgb(228, 226, 226);
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   border: 2px solid rgb(228, 226, 226);
   border-radius: 5px;
   padding: 2%;

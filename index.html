@@ -55,7 +55,7 @@
         <div class="text-container">
             <h2>hey, i'm rushit suthar!</h2>
             <p>A Full Stack focused Developer building the Full stack Websites and Applications that leads to the success of the overall product</p>
-            <button class="cv-btn">Download CV</button>
+            <a href="https://drive.google.com/file/d/1m6CRb93V0GGYyWyyIzdTI62odIdu4-AS/view?usp=sharing" class="cv-btn">Download CV</a>
         </div>
         <div class="side-menu">
             <div class="side-logo"><a href="https://www.linkedin.com/in/rushit-suthar-a2974b1a5"><i class="fa-brands fa-linkedin fa-sm"></i></a></div>
@@ -210,7 +210,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     // Disable the submit button and show loading message
     submitBtn.setAttribute("disabled", "true");
     responseMessage.innerText = "Sending email...";
-    responseMessage.style.color = "blue";
+    responseMessage.style.color = "grey";
 
     try {
         // Make a POST request to the Sails.js API
@@ -227,8 +227,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
         }
 
         // Success message
-        responseMessage.innerText = "Email sent successfully!";
-        responseMessage.style.color = "green";
+        responseMessage.innerText = "Your message sent successfully! we'll get back to you shortly";
+        responseMessage.style.color = "black";
 
         // Clear form fields (optional)
         document.getElementById("contactForm").reset();
